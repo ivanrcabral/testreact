@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from './App/Models/Product/product'
+import Banner from './App/Models/Banner/Banner'
 import './App.css';
 
 function App() {
@@ -11,10 +12,13 @@ function App() {
     description: "Description Nike, Description Nike, Description Nike",
     timeDate: new Date().getTime
   }
-
+  const banner={
+    text:"Probando Banner"
+  }
   return (
     <div className="main-container">
       <Product product={product}/>
+      <Banner banner={banner}/>
     </div>
   );
 }
